@@ -93,6 +93,23 @@
             Console.WriteLine("{0:F2}", number); //2 числа после запятой
             Console.WriteLine("{0:C}", number); // валюта
             Console.WriteLine("{0:P}", 0.1234); // проценты
+
+            Console.WriteLine("Введите целое число: ");
+            string? input = Console.ReadLine();
+            int number2 = Convert.ToInt32(input);
+
+            if (number2 > 0)
+            {
+                Console.WriteLine("Число положительное.");
+            }
+            else if (number2 < 0)
+            {
+                Console.WriteLine("Число отрицательное.");
+            }
+            else
+            {
+                Console.WriteLine("Это ноль.");
+            }
         }
     }
 }
