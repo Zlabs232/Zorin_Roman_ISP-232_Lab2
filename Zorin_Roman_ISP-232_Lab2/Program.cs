@@ -115,7 +115,21 @@
             int y4 = 2;
             int z3 = x5 < y4 ? (x5 + y4): (x5 - y4);
             Console.WriteLine(z3);
-            
+
+            string game = "Dota 2";
+
+            switch (game)
+            {
+                case "Dota 2":
+                    Console.WriteLine("Ваша игра - Dota 2");
+                    break;
+                case "CS":
+                    Console.WriteLine("Ваша игра - Counter-Strike");
+                    break;
+                case "Minecraft":
+                    Console.WriteLine("Ваша игра - Minecraft");
+                    break;
+            }
         }
     }
 }
