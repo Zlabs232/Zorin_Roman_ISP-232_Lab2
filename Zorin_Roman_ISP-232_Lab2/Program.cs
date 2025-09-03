@@ -148,6 +148,13 @@
             string res3 = (first + fourth) == (second - third) ? "Да" : "Нет";
             Console.WriteLine(res3);
 
+            //Task 4
+            int age = int.Parse(Console.ReadLine());
+            string res4 = age >= 18 ? "Доступ разрешен" : "Доступ запрещен";
+            Console.WriteLine(res4);
+
+
+
 
 
 
