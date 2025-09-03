@@ -110,6 +110,12 @@
             {
                 Console.WriteLine("Это ноль.");
             }
+
+            int x5 = 3;
+            int y4 = 2;
+            int z3 = x5 < y4 ? (x5 + y4): (x5 - y4);
+            Console.WriteLine(z3);
+            
         }
     }
 }
