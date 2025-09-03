@@ -153,6 +153,12 @@
             string res4 = age >= 18 ? "Доступ разрешен" : "Доступ запрещен";
             Console.WriteLine(res4);
 
+            //Task 5
+            int f1 = int.Parse(Console.ReadLine());
+            int f2 = int.Parse(Console.ReadLine());
+            string res5 = f1 > f2 ? $"{f2}" : $"{f1}";
+            Console.WriteLine(res5);
+
 
 
 
