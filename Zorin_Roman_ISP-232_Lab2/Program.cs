@@ -116,7 +116,7 @@
             int z3 = x5 < y4 ? (x5 + y4): (x5 - y4);
             Console.WriteLine(z3);
 
-            string game = "Dota 2";
+            string game = Console.ReadLine().ToLower();
 
             switch (game)
             {
