@@ -190,6 +190,24 @@
                 _ => "Неверное число"
             });
 
+            //Task 8
+            double d3 = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("Введите второе число: ");
+            double d4 = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("Введите операцию (+, -, *, /): ");
+            string operation2 = Console.ReadLine();
+
+            Console.WriteLine(operation2 switch
+            {
+                "+" => $"{d3} + {d4} = {d3 + d4}",
+                "-" => $"{d3} - {d4} = {d3 - d4}",
+                "*" => $"{d3} * {d4} = {d3 * d4}",
+                "/" => d4 != 0 ? $"{d3} / {d4} = {d3 / d4}" : "Ошибка: деление на 0",
+                _ => "Ошибка: неверная операция"
+            });
+
 
 
 
