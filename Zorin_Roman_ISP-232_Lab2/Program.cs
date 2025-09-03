@@ -34,6 +34,60 @@
             decimal z = x4 + y3;
             decimal e = 0.3m;
             Console.WriteLine(z == e); // тут же в свою очередь, вычисление точное из-за десятичного представления(decimal), поэтому True 
+
+            int n1 = 25;
+            int n2 = 17;
+            Console.WriteLine(n1 == n2);
+
+            int n3 = 45;
+            int n4 = 13;
+            Console.WriteLine(n3 != n4);
+            Console.WriteLine(n3 != 45);
+
+            int n5 = 45;
+            int n6 = 13;
+            Console.WriteLine(n5 > n6);
+
+            int n7 = 45;
+            int n8 = 13;
+            Console.WriteLine(n7 < n8);
+
+            int n9 = 45;
+            int n10 = 13;
+            Console.WriteLine(n9 <= n10);
+
+            int n11 = 45;
+            int n12 = 13;
+            Console.WriteLine(n11 >= n12);
+
+            bool n13 = (5 > 6) | (4 < 6);
+            bool n14 = (5 > 6) | (4 > 6);
+            Console.WriteLine(n13);
+            Console.WriteLine(n14);
+
+            bool n15 = (5 > 6) & (4 < 6);
+            bool n16 = (5 < 6) & (4 < 6);
+            Console.WriteLine(n15);
+            Console.WriteLine(n16);
+
+            bool n17 = (5 > 6) || (4 < 6);
+            bool n18 = (5 > 6) || (4 > 6);
+            Console.WriteLine(n17);
+            Console.WriteLine(n18);
+
+            bool n19 = (5 > 6) && (4 < 6);
+            bool n20 = (5 < 6) && (4 < 6);
+            Console.WriteLine(n19);
+            Console.WriteLine(n20);
+
+            bool n21 = true;
+            bool n22 = !n21;
+            Console.WriteLine(n22);
+
+            bool n23 = (5 > 6) ^ (4 < 6);
+            bool n24 = (50 > 6) ^ (4 / 2 < 3);
+            Console.WriteLine(n23);
+            Console.WriteLine(n24);
         }
     }
 }
