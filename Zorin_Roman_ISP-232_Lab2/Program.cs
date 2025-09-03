@@ -129,6 +129,9 @@
                 case "Minecraft":
                     Console.WriteLine("Ваша игра - Minecraft");
                     break;
+                default:
+                    Console.WriteLine("Игра не найдена");
+                    break;
             }
         }
     }
