@@ -128,7 +128,7 @@
                     break;
                 case "Minecraft":
                     Console.WriteLine("Ваша игра - Minecraft");
-                    break;
+                    goto case "Dota 2";
                 default:
                     Console.WriteLine("Игра не найдена");
                     break;
