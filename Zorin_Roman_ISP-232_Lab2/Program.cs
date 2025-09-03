@@ -118,21 +118,13 @@
 
             string game = Console.ReadLine().ToLower();
 
-            switch (game)
+            Console.WriteLine(game switch
             {
-                case "Dota 2":
-                    Console.WriteLine("Ваша игра - Dota 2");
-                    break;
-                case "CS":
-                    Console.WriteLine("Ваша игра - Counter-Strike");
-                    break;
-                case "Minecraft":
-                    Console.WriteLine("Ваша игра - Minecraft");
-                    goto case "Dota 2";
-                default:
-                    Console.WriteLine("Игра не найдена");
-                    break;
-            }
+                "dota 2" => "Ваша игра - Dota 2",
+                "cs" => "Ваша игра - CS:GO",
+                "minecraft" => "Ваша игра - Minecraft",
+                _ => "Игра не найдена"
+            });
         }
     }
 }
