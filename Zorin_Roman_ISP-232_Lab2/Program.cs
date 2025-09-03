@@ -134,7 +134,7 @@
             //Task 2
             string password1 = Console.ReadLine();
             string password2 = Console.ReadLine();
-            string res2 = password1 == password2 ? "парол принят" : "парол не принят";
+            string res2 = password1 == password2 ? "пароль принят" : "пароль не принят";
             Console.WriteLine(res2);
 
             //Task 3
@@ -175,6 +175,20 @@
                          operation == "/" ? (d2 != 0 ? $"{d1} - {d2} = {d1 / d2}" : "Деление на ноль. Ошибка") :
                          "Неверная операция.";
             Console.WriteLine(res6);
+
+            //Task 7
+            int day = int.Parse(Console.ReadLine());
+            Console.WriteLine(day switch
+            {
+                1 => "Понедельник",
+                2 => "Вторник",
+                3 => "Среда",
+                4 => "Четверг",
+                5 => "Пятница",
+                6 => "Суббота",
+                7 => "Воскресение",
+                _ => "Неверное число"
+            });
 
 
 
