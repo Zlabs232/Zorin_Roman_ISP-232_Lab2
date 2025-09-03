@@ -159,6 +159,26 @@
             string res5 = f1 > f2 ? $"{f2}" : $"{f1}";
             Console.WriteLine(res5);
 
+            //Task 6
+            Console.Write("Введите первое число: ");
+            double d1 = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("Введите второе число: ");
+            double d2 = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("Введите операцию (+, -, *, /): ");
+            string operation = Console.ReadLine();
+
+            string res6 = operation == "+" ? $"{d1} + {d2} = {d1 + d2}" :
+                         operation == "-" ? $"{d1} - {d2} = {d1 - d2}" :
+                         operation == "*" ? $"{d1} * {d2} = {d1 * d2}" :
+                         operation == "/" ? (d2 != 0 ? $"{d1} - {d2} = {d1 / d2}" : "Деление на ноль. Ошибка") :
+                         "Неверная операция.";
+            Console.WriteLine(res6);
+
+
+
+
 
 
 
