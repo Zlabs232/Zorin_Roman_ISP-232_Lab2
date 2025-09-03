@@ -1,19 +1,17 @@
-﻿namespace Program //Пространство имён
-{
-    internal class Program //Главный класс программы
-    {
-        static int health = 100; //Статич. поле ХП персонажа - 100 единиц
-        
-        static void Main(string[] args) //Главный метод - точка входа
-        {
-            Console.WriteLine($"Здоровье персонажа: {health}"); //Вывод текущего ХП персонажа в консоль
-            TakeDamage(30); //Вызов метода для нанесения урона 
-        }
+﻿using System;
 
-        static void TakeDamage(int damage) //Метод обработки получения урона 
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Выберите класс (воин, маг, разбойник, паладин, варвар, охотник, друид, жрец): ");
+        string CC = Console.ReadLine();
+
+        Console.WriteLine(CC switch
         {
-            health -= damage; //Уменьшение ХП на величину урона
-            Console.WriteLine($"Персонаж получил {damage} урона. Текущее здоровье {health}"); //Вывод информации об уровне и новом ХП
-        }
+            "воин" or "паладин" or "варвар" or "разбойник" => "ближний боец",
+            "маг" or "охотник" or "жрец" or "друид" => "дальнобойщик",
+            _ => "неизвестный класс"
+        });
     }
 }
