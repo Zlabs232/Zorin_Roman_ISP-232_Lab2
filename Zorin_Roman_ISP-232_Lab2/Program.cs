@@ -13,6 +13,13 @@
             double x = 10 / 3;
             Console.WriteLine($"Переменная х: {x}");
 
+            int x1 = 4;
+            int y1 = ++x1;
+            Console.WriteLine($"x1 = {x1}, y1 = {y1}");
+
+            int x2 = 4;
+            int y2 = x2++;
+            Console.WriteLine($"x1 = {x2}, y1 = {y2}");
         }
     }
 }
