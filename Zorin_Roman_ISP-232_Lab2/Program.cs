@@ -125,6 +125,13 @@
                 "minecraft" => "Ваша игра - Minecraft",
                 _ => "Игра не найдена"
             });
+
+            //Task 1
+            int numb = int.Parse(Console.ReadLine());
+            string res = numb % 2 == 0 ? $"число {numb} чётное" : $"число {numb} нечётное";
+            Console.WriteLine(res);
+
+
         }
     }
 }
